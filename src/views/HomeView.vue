@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header :headerImg="headerImg" :title="pageTitle" :subtitle="pageSubtitle" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Header from '@/layout/Header.vue';
+import Navigation from '@/layout/Navigation.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    Header,
+  },
+  data() {
+    return {
+      headerImg: require('@/assets/header_img.svg'), 
+      pageTitle: '#1 CROWDSOURCED CYBER SECURITY<br>PLATFORM IN INDONESIA',
+      pageSubtitle: 'Uji Keamanan Aplikasi Bisnis Anda Bersama<br>Bughunter Terbaik di sini!',
+    };
+  },
+  methods: {
+    customButtonClick() {
+      this.$router.push('/daftar');
+    },
   }
-}
+};
 </script>
+
+<style>
+</style>
