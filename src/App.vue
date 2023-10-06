@@ -1,18 +1,17 @@
 <template>
-    <div id="app">
-    <Navigation/>
-    <router-view/>
-    </div>
+  <div id="app">
+  <Navigation/>
+  <router-view/>
+  </div>
 </template>
 
 <script>
-import Header from '@/layout/Header.vue';
-import Navigation from '@/layout/Navigation.vue';
-
+import Header from './components/header.vue';
+import Navigation from '@/components/navigation.vue';
 
 export default {
-  name: 'App',
-  components: {
+name: 'app',
+components: {
     Header,
     Navigation,
   },
@@ -21,8 +20,8 @@ export default {
 
 <style>
 #app {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  color: #2c3e50;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+color: #2c3e50;
 }
 </style>

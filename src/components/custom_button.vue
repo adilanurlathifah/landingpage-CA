@@ -35,7 +35,6 @@ export default {
   box-shadow: 0 0 15px rgba(0,0,0,.15);
 }
 
-
 .custom_button .custom-button-blue:hover {
   background: #2070f2;
   color: white;
