@@ -1,2 +1,2 @@
 # landingpage-CA
-task 1 - create landing page cyberArmy
+task 1 - re-create landing page cyberArmy
